@@ -1,0 +1,234 @@
+/* 슬라이드쇼 컨테이너의 디자인 */
+.slideshow-container {
+    max-width: 1500px;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 8px;
+}
+
+/* 이미지를 숨기는데 사용 */
+.mySlides {
+    max-width:1500px;
+    height: 500px;
+    display: none;
+}
+
+/* 하단의 점들 */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 4px;    
+    background-color: rgb(95, 95, 95);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dots{
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.active {
+    background-color: #ffffff;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/*여기까지 슬라이드 쇼 관련 CSS 컨픽*/
+
+img {
+    border-radius: 10px;
+}
+
+/* 전체 게시판 통합 상자 */
+.home-main {
+    max-width:1500px;
+    margin: 0 auto;
+    color: black;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.home-article-container {
+    padding: 16px;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    flex: 1;
+    height: 200px;
+    background-color: rgb(242, 243, 247);
+    border-radius: 25px;
+}
+
+.home-article-container-mid-divider {
+    display: flex;
+    gap:16px;
+}
+
+.home-article-container-sector {
+    padding: 16px;
+    flex:1;
+    background-color: rgb(242, 243, 247);
+    border-radius: 25px;
+}
+
+.home-article-group {
+    display: flex;
+    gap: 8px;
+}
+
+.home-article-category-pre {
+    background-color: rgba(162, 219, 255, 0.577);
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.home-article-category {
+    background-color: rgb(172, 172, 255);
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.home-article-body {
+    background-color: rgb(255, 175, 175);
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.home-article-top-dataset {
+    background-color: rgb(255, 222, 149);
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.home-article-top-category {
+    background-color: rgb(132, 232, 255);
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.home-article-title {
+    background-color: rgb(0, 255, 166);
+    padding: 8px;
+    border-radius: 8px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.home-article-related {
+    background-color: rgb(55, 255, 0);
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.home-article-date-start {
+    background-color: rgb(166, 160, 255);
+    border-radius: 12px;
+    padding: 8px;
+}
+
+.home-article-date-end {
+    background-color: rgb(255, 158, 158);
+    border-radius: 12px;    
+    padding: 8px;
+}
+
+.home-article-a-title {
+    background-color: rgb(180, 255, 229);
+    padding: 8px;
+    border-radius: 8px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.home-article-a-related {
+    background-color: rgb(202, 255, 186);
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.home-article-a-date-start {
+    background-color: rgb(255, 179, 179);
+    border-radius: 12px;   
+    padding: 8px;
+}
+
+.home-article-a-date-end {
+    background-color: rgb(174, 168, 255);
+    border-radius: 12px;   
+    padding: 8px;
+}
+
+.home-article-top-title {
+    background-color: rgb(249, 163, 255);
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.home-article-top-date {
+    background-color: rgb(142, 255, 191);
+    border-radius: 12px;  
+    padding: 8px;
+}
+
+.home-article-container-sector-title {
+    display: block;
+    padding: 10px;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+table {
+    width: 100%;
+    padding: 20px;
+}
+
+tr {
+    font-size: 15pt;
+}
+
+td {
+    text-align: left;
+}
+
+body {
+    background-color: rgb(232, 234, 246);
+}
+
+.header {
+    background-color: rgb(23, 42, 161);
+}

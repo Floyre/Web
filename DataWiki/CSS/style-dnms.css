@@ -1,0 +1,120 @@
+body {
+    background-color: rgb(232, 234, 246);
+}
+
+.dnms-header {
+    background-color: rgb(46, 47, 54);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    height: 400px;
+    text-align:center;
+    margin-bottom: 40px;
+}
+
+.dnms-header-bottom {
+    display:block;
+    margin: 35px 0 80px 0;
+}
+
+#dnms-header-bottom-title {
+    font-weight: bold;
+    font-size: 40pt;
+}
+
+#dnms-header-bottom-passage {
+    font-size: 15pt;
+}
+
+.dnms-header-search {
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    line-height: 50px;
+    background-color: white;
+    color: rgb(149, 149, 149);
+    border-radius: 50px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.dnms-header-search input {
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    width: 600px
+}
+
+.dnms-main {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.dnms-article {
+    display: inline-block;
+    color: black;
+    margin: 10px 10px 10px 10px;
+}
+
+.dnms-article-container {
+    display: flex;
+}
+
+#dnms-article-sector {
+    width:500px;
+    height: 400px;
+    background-color: rgb(245, 245, 253);
+    margin: 10px 10px 10px 10px;
+    border-radius: 20px;
+}
+
+.dnms-main ul li {
+    display: flex;
+    margin: 5px 45px 5px 5px;
+    line-height: 30px;
+}
+
+.dnms-main a:link,
+.dnms-main a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.dnms-main table a:hover {
+    text-decoration: underline;
+}
+
+.dnms-aside {
+    color: black;
+    display: inline-block;
+    background-color: rgb(245, 245, 253);
+    border-radius: 20px;
+    width: 400px;
+    height:500px;
+    margin: 10px 10px 10px 10px;
+}
+
+.dnms-date {
+    background-color: rgb(220, 221, 230);
+    color:rgb(29, 29, 29);
+    border-radius: 20px;
+    padding: 1px 7px;
+    font-size:10pt;
+    font-weight:bold;
+}
+
+h2 {
+    display: block;
+    text-align: left;
+    margin: 25px 30px 0 30px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid rgb(29, 212, 90)
+}
+
+table {
+    text-align: left;
+    margin:0 auto;
+    padding-top:10px;
+    width:420px;
+    height: 300px;
+}
+

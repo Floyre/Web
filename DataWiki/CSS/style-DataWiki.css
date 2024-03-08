@@ -1,0 +1,206 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+ul {
+    list-style:none;
+    padding:0px
+}
+
+select {
+    width:270px;
+    background-color: transparent;
+    color:white;
+    border: 0;
+    outline: 0;
+}
+
+option {
+    background-color: rgb(57, 60, 75);
+}
+
+iframe {
+    display:block;
+    border:0;
+    outline:0;
+    background-color: white;
+}
+
+
+/*header*/
+.header {
+    background-color: rgb(50, 54, 73);
+}
+
+/*main*/
+.main {
+    justify-content: left;
+}
+
+
+/*DataWiki-aside*/
+.DataWiki-aside {
+    display:inline-block;
+    min-width:390px;
+}
+
+.DataWiki-aside-title {
+    font-weight:bold;
+    width:295px;
+    margin: 0 30px;
+    padding: 10px 10px;
+    border-bottom: 1px solid rgb(120, 123, 137);
+}
+
+.DataWiki-aside-subMenu {
+    padding-left:10px;
+    padding-top:10px;
+}
+
+.DataWiki-aside ul {
+    padding-left: 10px;
+}
+
+.DataWiki-aside li {
+    margin-left:8px;
+    padding: 10px 15px;
+    width: 290px;
+    height:17px;
+}
+
+.DataWiki-aside a {
+    font-size:11.5pt;
+    color:rgb(202, 205, 215);
+}
+
+.DataWiki-aside a:hover{
+    color:aliceblue;
+}
+
+.DataWiki-aside span {
+    display:inline-block;
+    background-color: rgb(27, 29, 34);
+    color:white;
+    border-radius: 10px;
+    font-size:5pt;
+    text-align: center;
+    padding: 1px 5px;
+}
+
+.DataWiki-sort-button {
+    padding: 10px 15px;
+    margin: 10px;
+    line-height:15px;
+    width:270px;
+    color:white;
+    font-weight: bold;
+}
+
+.DataWiki-sort-button input {
+    background-color: rgb(57, 60, 75);
+    color:white;
+    border-radius: 30px;
+    padding: 5px 10px;
+    outline:0;
+    border:0;
+}
+
+.DataWiki-search,
+.DataWiki-search-hidden {
+    padding: 10px 15px;
+    margin: 10px;
+    width: 300px;
+    height:25px;
+    background-color: rgb(57, 60, 75);
+    border-radius: 30px;
+}
+
+.DataWiki-search {
+    display:block;
+}
+
+.DataWiki-search-hidden {
+    display: none;
+}
+
+.DataWiki-search input {
+    width:290px;
+    height:20px;
+    background-color: transparent;
+    color:white;
+    border:0;
+    outline:0;
+}
+
+/*DataWiki-article*/
+.DataWiki-article {
+    display:inline-block;
+    width:1500px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.DataWiki-article h1{
+    display:block;
+    font-size:23pt;
+    margin:10px 10px;
+}
+
+.DataWiki-article-title {
+    font-weight:bold;
+    font-size:25px;
+    margin:10px;
+}
+
+.DataWiki-article p {
+    display:inline-block;
+    margin:10px;
+    font-size: 12pt;
+    line-height:20pt;
+}
+
+/*class or id*/
+#list-info {
+    display:inline-block;
+    background-color:rgb(26, 26, 29);
+    border-radius:10px;
+    padding: 5px 10px;
+    color:rgb(209, 209, 212);
+    margin: 10px;
+}
+
+#DataWiki-article-span {
+    display:inline-block;
+    background-color:rgb(23, 24, 27);
+    border-radius:30px;
+    font-size:11pt;
+    padding: 0 10px;
+    text-align:center;
+}
+
+#DataWiki-article-span a:hover {
+    text-decoration:underline;
+}
+
+#DataWiki-article-span a:link,
+#DataWiki-article-span a:visited{
+    text-decoration:none;
+    color:rgb(78, 247, 87);
+}
+
+#DataWiki-article-ul {
+    padding-left:40px;
+}
+
+#DataWiki-article-ul li{
+    list-style:inside;
+    padding: 5px 0;
+}
+
+#DataWiki-link-error {
+    display:none;
+}

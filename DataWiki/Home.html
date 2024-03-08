@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" tpye="text/css" href="CSS\style-layout.css">
+        <link rel="stylesheet" tpye="text/css" href="CSS\style-Home.css">
+        <title> Sangmyung DataWiki</title>
+    </head>
+    <body>
+        <!--Contents와 footer룰 분리해 구분-->
+        <div id="contents-wrapper">
+            <!--header-->
+            <div class="header">
+                <nav>
+                    <div class="header-logo"><a href="Home.html" title="처음으로 돌아가기"><img src="Image\SangMyung_DataWiki.png"
+                                width="150px" height="52px"></a></div>
+                    <div class="header-main_menu">
+                        <a href="datawiki-docs\DataWiki.html">DataWiki</a>
+                        <a href="sharehub-docs\ShareHub.html">ShareHub</a>
+                        <a href="Colosseum.html">Colosseum</a>
+                        <a href="Forum-notice.html">Forum</a>
+                        <a href="javascript:void(0);" onclick="loginEntrance('Log-in.html');" id="login">LogIn</a>
+                        <a href="#">Search</a>
+                    </div>
+                    <div class="header-logo2">
+                        <a href="https://swai.smu.ac.kr/" title="상명대학교 SW중심대학사업단"><img src="Image\SangMyung_SW.png"
+                                width="232px" height="52px"></a>
+                    </div>
+                </nav>
+            </div>
+            <!-- 슬라이드쇼 컨테이너 -->
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="Image/Home/Slide/slide_item_1.png" style="width:100%; height: 100%;">
+                </div>
+                <div class="mySlides fade">
+                    <img src="Image/Home/Slide/slide_item_2.png" style="width:100%; height: 100%;">
+                </div>
+                <div class="mySlides fade">
+                    <img src="Image/Home/Slide/slide_item_3.png" style="width:100%; height: 100%;">
+                </div>
+                <div class="mySlides fade">
+                    <img src="Image/Home/Slide/slide_item_4.png" style="width:100%; height: 100%;">
+                </div>
+                <div class="mySlides fade">
+                    <img src="Image/Home/Slide/slide_item_5.png" style="width:100%; height: 100%;">
+                </div>
+            </div>
+            <!-- 현재 이미지를 알려주는 하단의 점 -->
+            <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <!--main-->
+            <div class="home-main">
+                <div class="home-article-container">
+                    <div class="home-article-container-title">
+                        <h1>최신 데이터셋</h1>
+                    </div>
+                    <div class="home-article-group">
+                        <div class="home-article-category-pre">DATA SET</div>
+                        <div class="home-article-body">CONTENT_HERE</div>
+                        <div class="home-article-category">CATEGORY_HERE</div>
+                    </div>
+                    <div class="home-article-group">
+                        <div class="home-article-category-pre">DATA SET</div>
+                        <div class="home-article-body">CONTENT_HERE</div>
+                        <div class="home-article-category">CATEGORY_HERE</div>
+                    </div>
+                    <div class="home-article-group">
+                        <div class="home-article-category-pre">DATA SET</div>
+                        <div class="home-article-body">CONTENT_HERE</div>
+                        <div class="home-article-category">CATEGORY_HERE</div>
+                    </div>
+                </div>
+                <div class="home-article-container-mid-divider">
+                    <div class="home-article-container">
+                        <div class="home-article-container-title">
+                            <h1>전체 대회 일정</h1>
+                        </div>
+                        <div class="home-article-group">
+                            <div class="home-article-title"></div>
+                            <div class="home-article-related"></div>
+                            <div class="home-article-date-start"></div>
+                            <div class="home-article-date-end"></div>
+                        </div>
+                        <div class="home-article-group">
+                            <div class="home-article-title"></div>
+                            <div class="home-article-related"></div>
+                            <div class="home-article-date-start"></div>
+                            <div class="home-article-date-end"></div>
+                        </div>
+                        <div class="home-article-group">
+                            <div class="home-article-title"></div>
+                            <div class="home-article-related"></div>
+                            <div class="home-article-date-start"></div>
+                            <div class="home-article-date-end"></div>
+                        </div>
+                    </div>
+                    <div class="home-article-container">
+                        <div class="home-article-container-title">
+                            <h1>최신 대회 일정</h1>
+                        </div>
+                        <div class="home-article-group">
+                            <div class="home-article-a-title"></div>
+                            <div class="home-article-a-related"></div>
+                            <div class="home-article-a-date-start"></div>
+                            <div class="home-article-a-date-end"></div>
+                        </div>
+                        <div class="home-article-group">
+                            <div class="home-article-a-title"></div>
+                            <div class="home-article-a-related"></div>
+                            <div class="home-article-a-date-start"></div>
+                            <div class="home-article-a-date-end"></div>
+                        </div>
+                        <div class="home-article-group">
+                            <div class="home-article-a-title"></div>
+                            <div class="home-article-a-related"></div>
+                            <div class="home-article-a-date-start"></div>
+                            <div class="home-article-a-date-end"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-article-container-mid-divider">
+                    <div class="home-article-container">
+                        <div class="home-article-container-title">
+                            <h2>인기 Dataset TOP3</h2>
+                        </div>
+                        <div class="home-article-group">
+                            <div class="home-article-category-pre">DATA SET</div>
+                            <div class="home-article-top-dataset"></div>
+                            <div class="home-article-top-category"></div>
+                        </div>
+                        <div class="home-article-group">
+                            <div class="home-article-category-pre">DATA SET</div>
+                            <div class="home-article-top-dataset"></div>
+                            <div class="home-article-top-category"></div>
+                        </div>
+                        <div class="home-article-group">
+                            <div class="home-article-category-pre">DATA SET</div>
+                            <div class="home-article-top-dataset"></div>
+                            <div class="home-article-top-category"></div>
+                        </div>
+                    </div>
+                    <div class="home-article-container">
+                        <div class="home-article-container-title">
+                            <h2>포럼 좋아요 TOP3</h2>
+                        </div>
+                        <div class="home-article-group">
+                            <div class="home-article-top-title"></div>
+                            <div class="home-article-top-date"></div>
+                        </div>
+                        <div class="home-article-group">
+                            <div class="home-article-top-title"></div>
+                            <div class="home-article-top-date"></div>
+                        </div>
+                        <div class="home-article-group">
+                            <div class="home-article-top-title"></div>
+                            <div class="home-article-top-date"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---footer-->
+        <footer>
+            <ul class="footer_list">
+                <li><a href="https://software.smu.ac.kr/board/policy/privacy.do" target='_blank'><span
+                            style="color: #EFAF40; font-weight:Bold">개인정보처리방침</span></a>
+                    &nbsp;&nbsp;&nbsp;<a href="https://software.smu.ac.kr/board/policy/email.do"
+                        target='_blank'>이메일주소무단수집거부</a></li>
+                <li><br>(03016) 서울시 종로구 홍지문 2길 20 상명대학교 SW중심대학산업단</li>
+                <li><br>COPYRIGHT BY SANGMYUNG UNIVERSITY. ALL RIGHTS RESERVED.</li>
+            </ul>
+        </footer>
+        <!--javascript-->
+        <script type="text/javascript" src="JS\Home.js"> </script>
+        <script type="text/javascript" src="JS\DataWiki.js"> </script>
+        <script type="text/javascript" src="JS\Forum.js"> </script>
+        <script type="text/javascript" src="JS\submenu.js"> </script>
+        <script type="text/javascript" src="JS\Colosseum.js"> </script>
+    </body>
+</html>

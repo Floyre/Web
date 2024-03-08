@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="pw.css"/>
+        <script defer src="gen.js"></script>
+    </head>
+    <body>
+        <div class="box">
+            <h1>Password Generator</h1>
+            <table>
+                <th><select name="length" id="length">
+                    <optgroup label="Weak">
+                        <option value="8">8</option>
+                        <option value="10">10</option>
+                        <option value="12">12</option>
+                    </optgroup>
+                    <optgroup label="Moderate">
+                        <option value="14">14</option>
+                        <option value="16">16</option>
+                        <option value="18">18</option>
+                    </optgroup>
+                    <optgroup label="Strong">
+                        <option value="20">20</option>
+                        <option value="22">22</option>
+                        <option value="24">24</option>
+                    </optgroup>
+                </select></th>
+                <th><p> <input id ="output"> </p></th>
+                <th><input type="button" id="gen_button" onclick="gen_click();" value="Generate!"/></th>
+            </table>
+            <div id="checkbox"><label><input type="checkbox" name="sign" value="sign"> Include Sign?</label></div>
+        </div>
+    </body>
+</html>

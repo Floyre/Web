@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="army.css"/>
+        <script defer src="army.js"></script>
+    </head>
+    <body>
+        <div class="box",>
+            <h1>ARMY COUNTER</h1>
+            <table>
+                <th><label id="date_title">입대일 </label></th>
+                <th><input type='date' id="start_date" name="start_date"
+                    value="2022-06-27">
+                </th>
+            </table>
+
+            <table>
+                <th><label id="date_title">전역일 </label></th>
+                <th><input type='date' id="end_date" name="end_date"
+                    value="2023-12-25" oninput='submit()'>
+                </th>
+            </table>
+
+            <table>
+                <th id="remain_table"><h4>전체<br>복무일<br><span id="table_font"><label id="total_date">###</label></span>일</th>
+                <th id="remain_table"><h4>현재<br>복무일<br><span id="table_font"><label id="done_date">###</label></span>일</th>
+                <th id="remain_table"><h4>남은<br>복무일<br><span id="table_font"><label id="remain_date">###</label></span>일</th>
+                <th id="remain_table"><h4>남은<br>평일<br><span id="table_font"><label id="remain_work_date">###</label></span>일</th>
+            </table>
+            
+            <label id="title">전역까지</label><br>
+            <span id="percentage"><label id="end_percentage">##.##</label>%</span><br>
+            <div id="spacer"><label id="end_tick">## ## ##</label>남았습니다.</div>
+
+            <label id="title">다음 계급까지 </label><br>
+            <span id="percentage"><label id="next_rank_percentage">##.##</label>%</span><br>
+            <div id="spacer"><label id="next_rank_tick">## ## ##</label>남았습니다.</div>
+
+            <label id="title">다음 호봉까지</label><br>
+            <span id="percentage"><label id="rank_up_percentage">##.##</label>%</span><br>
+            <div id="spacer"><label id="next_salary_tick">## ## ##</label>남았습니다.</div>
+            <label id="graph_KR">현재 계급은 </label><label id="now_rank">## </label> <label id="salary">#</label><label id="graph_h">호봉 </label><label id="graph_KR">입니다.</label><br>
+            <label id="graph_KR">다음 계급은 </label><label id="next_rank">##</label><label id="graph_KR"> 입니다.</label><br>
+            
+        </div>
+    </body>
+</html>

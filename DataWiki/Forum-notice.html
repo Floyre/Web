@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" tpye="text/css" href="CSS\style-layout.css">
+        <link rel="stylesheet" tpye="text/css" href="CSS\style-Forum.css">
+        <title> Sangmyung DataWiki | Forum > 공지사항 </title>
+    </head>
+    <body>
+        <!--Contents와 footer룰 분리해 구분-->
+        <div id="contents-wrapper">
+            <!--header-->
+            <div class="header">
+                <nav>
+                    <div class="header-logo"><a href="Home.html" title="처음으로 돌아가기"><img src="Image\SangMyung_DataWiki.png" width="150px" height="52px"></a></div>
+                    <div class="header-main_menu">
+                        <a href="datawiki-docs\DataWiki.html">DataWiki</a>
+                        <a href="sharehub-docs\ShareHub.html">ShareHub</a>
+                        <a href="Colosseum.html">Colosseum</a>
+                        <a href="Forum-notice.html">Forum</a>
+                        <a href="javascript:void(0);" onclick="loginEntrance('Log-in.html');" id="login">LogIn</a>
+                        <a href="#">Search</a>
+                    </div>
+                    <div class="header-logo2">
+                        <a href="https://swai.smu.ac.kr/" title="상명대학교 SW중심대학사업단"><img src="Image\SangMyung_SW.png" width="232px" height="52px"></a>
+                    </div>
+                </nav>
+                <div class="header-title">
+                    <h1> Forum </h1>
+                    <p> 사람들과 다양한 이야기를 나눌 수 있는 공간입니다. </p>
+                </div>
+            </div>
+            <div class="main">
+                <!--aside-->
+                <aside>
+                    <div class="aside-title"><img src="Image\SangMyung_DataWiki_Menu.png" width="80%" height="80%"></div>
+                    <ul>
+                        <li><a href="Forum-notice.html">공지사항</a></li>
+                        <li><a href="Forum-dnms.html">대나무숲</a></li>
+                    </ul>
+                </aside>
+                <!--article-->
+                <article>
+                    <div class="article-title">
+                        <h1> 공지사항 </h1>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>번호</th>
+                                <th>제목</th>
+                                <th>내용</th>
+                                <th>작성일</th>
+                                <th>추천수</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="forum-board"></tr>
+                            <tr id="forum-board"></tr>
+                            <tr id="forum-board"></tr>
+                            <tr id="forum-board"></tr>
+                            <tr id="forum-board"></tr>
+                            <tr id="forum-board"></tr>
+                            <tr id="forum-board"></tr>
+                            <tr id="forum-board"></tr>
+                            <tr id="forum-board"></tr>
+                            <tr id="forum-board"></tr>
+                            <tr id="forum-board"></tr>
+                        </tbody>
+                    </table>
+                </article>
+            </div>
+        </div>
+        <!---footer-->
+        <footer>
+            <ul class="footer_list">
+                <li><a href="https://software.smu.ac.kr/board/policy/privacy.do" target='_blank'><span style="color: #EFAF40; font-weight:Bold">개인정보처리방침</span></a>
+                &nbsp;&nbsp;&nbsp;<a href="https://software.smu.ac.kr/board/policy/email.do" target='_blank'>이메일주소무단수집거부</a></li>
+                <li><br>(03016) 서울시 종로구 홍지문 2길 20 상명대학교 SW중심대학산업단</li>
+                <li><br>COPYRIGHT BY SANGMYUNG UNIVERSITY. ALL RIGHTS RESERVED.</li>
+            </ul>
+        </footer>
+        <!--javascript-->
+        <script type="text/javascript" src="JS\submenu.js"></script>
+        <script type="text/javascript" src="JS\Forum.js"></script>
+        <script type="text/javascript" src="JS\Colosseum.js"></script>
+    </body>
+</html>

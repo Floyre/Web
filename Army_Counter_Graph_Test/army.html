@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="army.css"/>
+        <script defer src="army.js"></script>
+    </head>
+    <body>
+        <div class="box",>
+            <h1>Army Counter</h1>
+            <table>
+                <th><label id="date_title">입대일 :</label></th>
+                <th><input type='date' id="start_date" name="start_date"
+                    value="2022-06-27"
+                    min="2022-01-01" max="2025-12-31">
+                </th>
+            </table>
+
+            <table>
+                <th><label id="date_title">전역일 :</label></th>
+                <th><input type='date' id="end_date" name="end_date"
+                    value="2023-12-26"
+                    min="2023-01-01" max="2026-12-31">
+                </th>
+            </table>
+
+            <table>
+                <th id="remain_table"><h4>전체<br>복무일<br><span id="table_font"><label id="total_date">###</label></span>일</th>
+                <th id="remain_table"><h4>현재<br>복무일<br><span id="table_font"><label id="done_date">###</label></span>일</th>
+                <th id="remain_table"><h4>남은<br>복무일<br><span id="table_font"><label id="remain_date">###</label></span>일</th>
+                <th id="remain_table"><h4>남은<br>평일<br><span id="table_font"><label id="remain_work_date">###</label></span>일</th>
+            </table>
+            <div></div> <!-- 각기 다른 그래프에 그래프 UI(레이아웃)은 동일하게 적용하기, 근데 그래프 퍼센티지 내용은 달라야 함 -->
+
+            <div id="myProgress">
+                <div id="end_Bar"></div>
+            </div>
+            <label id="graph_KR">전역 </label><br>
+            <span id="percentage"><label id="end_percentage">##.##</label>%</span>
+
+            <div id="myProgress">
+                <div id="next_rank_Bar"></div>
+            </div>
+            <label id="graph_KR">상병 </label><br>
+            <span id="percentage"><label id="next_rank_percentage">##.##</label>%</span>
+
+            <div id="myProgress">
+                <div id="rank_up_Bar"></div>
+            </div>
+            <label id="graph_KR">상병 </label><label id="salary">1</label><label id="graph_KR">호봉</label><br>
+            <span id="percentage"><label id="rank_up_percentage">##.##</label>%</span>
+        </div>
+    </body>
+</html>

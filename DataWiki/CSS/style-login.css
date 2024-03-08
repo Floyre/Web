@@ -1,0 +1,70 @@
+a {
+    display:block;
+    font-size:13.3px;
+    margin:12px auto;
+}
+
+a:link, a:visited {
+    color:rgb(70, 70, 70);
+    text-decoration: none;
+}
+
+body {
+    background-image:url("..\\Image\\SangMyung_DataWiki_login-background.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.login-header {
+    line-height:30px;
+    text-align:center;
+    margin: 30px auto;
+}
+
+.login-form {
+    margin: 0 auto;
+    text-align: center;
+    width:450px;
+}
+
+#login-link {
+    display:block;
+    float:right;
+}
+
+#right {
+    text-align: right;
+}
+
+#login_OK_Check {
+    width:450px;
+    height: 50px;
+    background-color:rgb(24, 44, 153);
+    color:white;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    font-weight:bold;
+}
+
+#user_id,
+#user_pw {
+    width:420px;
+    height:30px;
+    line-height:15px;
+    background-color: rgb(241, 242, 245);
+    border-radius:15px;
+    border: 1px solid;
+    border-color:rgb(217, 217, 221);
+    padding:5px 10px;
+    margin:5px;
+    font-size:12px;
+    opacity:0.8
+}
+
+#login-error {
+    float:left;
+    font-size:10pt;
+    color:red;
+    padding:0 10px;
+}

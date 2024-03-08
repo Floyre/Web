@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" tpye="text/css" href="..\CSS\style-layout.css">
+        <link rel="stylesheet" tpye="text/css" href="..\CSS\style-ShareHub.css">
+        <title> Sangmyung DataWiki | ShareHub </title>
+    </head>
+    <body>
+        <!--Contents와 footer룰 분리해 구분-->
+        <div id="contents-wrapper">
+            <!--header-->
+            <div class="header">
+                <nav>
+                    <div class="header-logo"><a href="..\Home.html" title="처음으로 돌아가기"><img src="..\Image\SangMyung_DataWiki.png" width="150px" height="52px"></a></div>
+                    <div class="header-main_menu">
+                        <a href="..\datawiki-docs\DataWiki.html">DataWiki</a>
+                        <a href="ShareHub.html">ShareHub</a>
+                        <a href="..\Colosseum.html">Colosseum</a>
+                        <a href="..\Forum-notice.html">Forum</a>
+                        <a href="javascript:void(0);" onclick="loginEntrance('..\\Log-in.html');" id="login">LogIn</a>
+                        <a href="#">Search</a>
+                    </div>
+                    <div class="header-logo2">
+                        <a href="https://swai.smu.ac.kr/" title="상명대학교 SW중심대학사업단"><img src="..\Image\SangMyung_SW.png" width="232px" height="52px"></a>
+                    </div>
+                </nav>
+                <div class="header-title">
+                    <h1> ShareHub </h1>
+                    <p> 데이터 분석을 위한 기초 자료를 제공하는 공간입니다. </p>
+                </div>
+            </div>
+            <div class="main">
+                <div class="ShareHub-aside">
+                    <div class="ShareHub-aside-title">
+                        Dataset Sample Codes
+                    </div>
+                    <ul id="list">
+                        <span id="toc-toggle-Top" style="text-align: center;" onclick="openCloseTensor()">TensorFlow</span>
+                        <ol id="toc-tensorflow">
+                            <span id="toc-toggle" style="text-align: center;" onclick="openCloseTensorText()">자연어 [CSV, TEXT]</span>
+                            <ol id="toc-tensorflow-Text">
+                                <a href="word-embedding.html"><li>단어 임베딩</li></a>
+                                <a href ="Word2Vec.html"><li>Word2Vec</li></a>
+                                <a href ="RNN-text.html"><li>RNN을 사용한 텍스트 분류</li></a>
+                                <a href ="BERT-text.html"><li>BERT로 텍스트 분류</li></a>
+                                <a href ="TPU-BERT.html"><li>TPU에서 BERT를 사용하여 GLUE작업 해결</li></a>
+                                <a href ="ATTENTION.html"><li>어텐션을 사용한 인공신경망 기계번역</li></a>
+                                <a href ="Image-caption.html"><li>이미지 캡션</li></a>
+                            </ol>
+                            <br>
+                            <span id="toc-toggle" style="text-align: center;" onclick="openCloseTensorImage()">이미지[JPG, PNG]</span>
+                            <ol id="toc-tensorflow-Image">
+                                <a href ="CNN.html"><li>컨볼루셔널 신경망</li></a>
+                                <a href ="Image-classification.html"><li>이미지 분류</li></a>
+                                <a href ="Study-configuration.html"><li>전이 학습 및 미세 조정</li></a>
+                                <a href ="TF-Hub.html"><li>TF Hub를 사용한 전이 학습</li></a>
+                                <a href ="Data-reinforcement.html"><li>데이터 증강</li></a>
+                                <a href ="Image-segmentation.html"><li>이미지 분절화</li></a>
+                                <a href ="TF-Hub-recognition.html"><li>TF Hub를 사용한 객체 감지</li></a>
+                            </ol>
+                            <br>
+                            <span id="toc-toggle" style="text-align: center;" onclick="openCloseTensorMovie()">동영상[AVI, MP3]</span>
+                            <ol id="toc-tensorflow-Movie">
+                                <a href ="CNN.html"><li>컨볼루셔널 신경망</li></a>
+                                <a href ="Image-classification.html"><li>이미지 분류</li></a>
+                                <a href ="Study-configuration.html"><li>전이 학습 및 미세 조정</li></a>
+                                <a href ="TF-Hub.html"><li>TF Hub를 사용한 전이 학습</li></a>
+                                <a href ="Data-reinforcement.html"><li>데이터 증강</li></a>
+                                <a href ="Image-segmentation.html"><li>이미지 분절화</li></a>
+                                <a href ="TF-Hub-recognition.html"><li>TF Hub를 사용한 객체 감지</li></a>
+                            </ol>
+                        </ol>
+                        <br>
+                        <span id="toc-toggle-Top" style="text-align: center;" onclick="openClosePyTorch()">PyTorch</span>
+                        <ol id="toc-pytorch">
+                            <span id="toc-toggle" style="text-align: center;" onclick="openClosePyTorchText()">자연어 [CSV, TEXT]</span>
+                            <ol id="toc-PyTorch-Text">
+                                <a href ="transformer-TT.html"><li>nn.Transformer 와 TorchText 로 시퀀스-투-시퀀스(Sequence-to-Sequence) 모델링</li></a>
+                                <a href ="RNN-sort.html"><li>문자-단위 RNN으로 이름 분류</li></a>
+                                <a href ="RNN-create.html"><li>문자-단위 RNN으로 이름 생성</li></a>
+                                <a href="STS-attention.html"><li>SEQUENCE TO SEQUENCE 네트워크와 ATTENTION을 이용한 번역</li></a>
+                                <a href="torchtext-sort.html"><li>TORCHTEXT 라이브러리로 텍스트 분류</li></a>
+                                <a href="transformer-translate.html"><li>nn.Transformer와 torchtext로 언어 번역</li></a>
+                            </ol>
+                            <br>
+                            <span id="toc-toggle" style="text-align: center;" onclick="openClosePyTorchImage()">이미지[JPG, PNG]</span>
+                            <ol id="toc-PyTorch-Image">
+                                <a href="torchvision-finetuning.html"><li>TorchVision 객체 검출 미세조정(Finetuning)</li></a>
+                                <a href="vision-transfer-learning.html"><li>컴퓨터 비전(Vision)을 위한 전이학습(Transfer Learning)</li></a>
+                                <a href="adversarial-example-gen.html"><li>적대적 예제 생성(ADVERSARIAL EXAMPLE GENERATION)</li></a>
+                                <a href="DCGAN.html"><li>DCGAN 튜토리얼</li></a>
+                                <a href="vision-transformer.html"><li>배포를 위한 비전 트랜스포머(VISION TRANSFORMER) 모델 최적화</li></a>
+                            </ol>
+                            <br>
+                            <span id="toc-toggle" style="text-align: center;" onclick="openClosePyTorchMovie()">동영상[AVI, MP3]</span>
+                            <ol id="toc-PyTorch-Movie">
+                                <a href="torchvision-finetuning.html"><li>TorchVision 객체 검출 미세조정(Finetuning)</li></a>
+                                <a href="vision-transfer-learning.html"><li>컴퓨터 비전(Vision)을 위한 전이학습(Transfer Learning)</li></a>
+                                <a href="adversarial-example-gen.html"><li>적대적 예제 생성(ADVERSARIAL EXAMPLE GENERATION)</li></a>
+                                <a href="DCGAN.html"><li>DCGAN 튜토리얼</li></a>
+                                <a href="vision-transformer.html"><li>배포를 위한 비전 트랜스포머(VISION TRANSFORMER) 모델 최적화</li></a>
+                            </ol>
+                            <br>
+                            <span id="toc-toggle" style="text-align: center;" onclick="openClosePyTorchVoice()">음성 [WAV]</span>
+                            <ol id="toc-PyTorch-Voice">
+                                <a href ="Wav2Vec2.html"><li>Speech Recognition with Wav2Vec2</li></a>
+                                <a href ="torchaudio.html"><li>Speech Command Classification with torchaudio</li></a>
+                                <a href ="torchaudio-tts.html"><li>Text-to-speech with torchaudio</li></a>
+                                <a href ="FA-Wav2Vec2.html"><li>Forced Alignment with Wav2Vec2</li></a>
+                            </ol>
+                        </ol>
+                    </ul>
+                </div>
+
+                <div class="ShareHub-article">
+                    <div class="ShareHub-article-title">
+                        문자-단위 RNN으로 이름 분류하기
+                    </div>
+                    <div class="ShareHub-iframe">
+                        단어를 분류하기 위해 기초적인 문자-단위 RNN을 구축하고 학습 할 예정입니다.<br>이 튜토리얼에서는 (이후 2개 튜토리얼과 함께) NLP 모델링을 위한 데이터 전처리를 torchtext 의 편리한 많은 기능들을 사용하지 않고 어떻게 하는지<br> “기초부터(from scratch)” 보여주기 떄문에 NLP 모델링을 위한 전처리가 저수준에서 어떻게 진행되는지를 알 수 있습니다.<br>
+                        <a href="https://tutorials.pytorch.kr/intermediate/char_rnn_classification_tutorial.html"><img src="..\Image\PyTorch.png" width=180px, height=45px></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---footer-->
+        <footer>
+            <ul class="footer_list">
+                <li><a href="https://software.smu.ac.kr/board/policy/privacy.do" target='_blank'><span style="color: #EFAF40; font-weight:Bold">개인정보처리방침</span></a>
+                &nbsp;&nbsp;&nbsp;<a href="https://software.smu.ac.kr/board/policy/email.do" target='_blank'>이메일주소무단수집거부</a></li>
+                <li><br>(03016) 서울시 종로구 홍지문 2길 20 상명대학교 SW중심대학산업단</li>
+                <li><br>COPYRIGHT BY SANGMYUNG UNIVERSITY. ALL RIGHTS RESERVED.</li>
+            </ul>
+        </footer>
+
+        <!--javascript-->
+        <script type="text/javascript" src="..\JS\submenu.js"></script>
+        <script type="text/javascript" src="..\JS\ShareHub.js"></script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" tpye="text/css" href="CSS\style-login.css">
+        <title> Sangmyung University | Log-in</title>
+    </head>
+    <body>
+        <div class="login-header">
+            <img src="Image\SangMyung_DataWiki_login.png" alt="샘물 통합로그인">
+        </div>
+        <div class="login-form">
+            <div>
+                <div id="login-error"></div>
+                <input id="user_id" type="text" placeholder="학번/교직원번호"><br>
+                <input id="user_pw" type="password" placeholder="비밀번호"><br>
+                <div id="login-link">
+                    <a href="" id="right">비밀번호 초기화</a><a href="">학번/교직원번호 조회</a>
+                </div>
+            </div>
+            <input id="login_OK_Check" type="button" value="로그인" onclick="loginOKCheck()">
+        </div>
+        <!--javascript-->
+        <script src="JS\submenu.js" type="text/javascript"></script>
+    </body>
+</html>
